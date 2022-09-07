@@ -1,4 +1,58 @@
 body {
-  background-color: #777;
-  color: aliceblue;
+  background-color: rgb(39, 39, 39);
+  color: rgb(156, 255, 166);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+
+.navbar img {
+  height: 35px;
+  margin: 0px 12px 0px 12px;
+}
+
+.navbar input {
+  background-color: rgb(39, 45, 45);
+  border-radius: 4px;
+  height: 30px;
+}
+
+.nav-search {
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.search-input {
+  display: flex;
+  flex-direction: column;
+}
+
+button[id="search button"] {
+  border: 1px solid rgb(156, 255, 166);
+  border-radius: 6px;
+  margin-left: 6px;
+  width: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 1.4rem;
+  margin-right: 20px;
+}
+
+.topmenu {
+  display: flex;
+  gap: 16px;
+  font-size: 1.2rem;
 }

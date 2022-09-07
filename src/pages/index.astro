@@ -1,7 +1,10 @@
 ---
-import TopMenu from '../components/navbar';
+import NavBar from '../components/NavBar.astro';
+import TopMenu from '../components/TopMenu';
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 <MainLayout>
-    <TopMenu></TopMenu>
+    <NavBar>
+        <TopMenu></TopMenu>
+    </NavBar>
 </MainLayout>

@@ -6,7 +6,7 @@ function MenuItem(props){
 function TopMenu(props){
   const topMenu = ['Getting started', 'Components', 'Styles', 'Layouts', 'Patterns', 'Use cases']
   return (
-    <div>
+    <div class="topmenu">
       <For each={topMenu}>{(item) =>
         <MenuItem item={item}></MenuItem>
       }
