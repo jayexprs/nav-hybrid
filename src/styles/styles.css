@@ -2,6 +2,7 @@ body {
   background-color: rgb(39, 39, 39);
   color: rgb(156, 255, 166);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 100vh;
 }
 
 .navbar {
@@ -55,4 +56,13 @@ button[id="search button"] {
   display: flex;
   gap: 16px;
   font-size: 1.2rem;
+}
+
+.left-nav {
+  width: 15%;
+  height: 100%;
+  color: black;
+  background-color: #b1b1b1;
+  padding: 16px;
+  font-size: 1.2em;
 }
