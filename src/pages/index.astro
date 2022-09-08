@@ -1,12 +1,14 @@
 ---
 import NavBar from '../components/NavBar.astro';
+import SideNav from '../layouts/SideNav.astro';
 import TopMenu from '../components/TopMenu';
 import MainLayout from '../layouts/MainLayout.astro';
-import ContentLayout from '../layouts/ContentLayout.astro';
+import {SITE} from '../../Nav';
+
 ---
 <MainLayout>
     <NavBar>
-        <TopMenu></TopMenu>
+        <TopMenu menu={Object.keys(SITE)} client:load></TopMenu>
     </NavBar>
-    <ContentLayout></ContentLayout>
+    <SideNav></SideNav>
 </MainLayout>

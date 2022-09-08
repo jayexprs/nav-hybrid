@@ -56,6 +56,11 @@ button[id="search button"] {
   display: flex;
   gap: 16px;
   font-size: 1.2rem;
+
+}
+
+.topmenu a::first-letter {
+  text-transform: uppercase;
 }
 
 .left-nav {
@@ -65,4 +70,16 @@ button[id="search button"] {
   background-color: #b1b1b1;
   padding: 16px;
   font-size: 1.2em;
+}
+
+.list-header {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.nav-items {
+  margin-bottom: 12px;
+}
+
+.list-child {
+  padding-left: 6px;
 }

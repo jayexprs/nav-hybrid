@@ -1,0 +1,294 @@
+text: Utilities
+  key: utils
+  items:
+    - text: Overview
+      base: /.
+    - text: Avatar
+      base: /components/avatar/
+      value: /components/avatar/guidance
+    - text: Backdrop
+      base: /components/backdrop/
+      value: /components/backdrop/guidance
+    - text: Color picker
+      base: /components/color-picker/
+      value: /components/color-picker/guidance
+    - text: Icon
+      base: /components/icon/
+      value: /components/icon/guidance
+    - text: Ripple
+      base: /components/ripple/
+      value: /components/ripple/guidance
+    - text: View switcher
+      base: /components/view-switcher/
+      value: /components/view-switcher/guidance
+
+- text: Badges
+  key: status-notifications
+  items:
+    - text: Overview
+      value: /.
+    - text: Dot Badge
+      base: /components/badge/
+      value: /components/badge/guidance
+    - text: Count Badge
+      base: /components/badge/
+      value: /components/badge/guidance
+    - text: Text Badge
+      base: /components/badge/
+      value: /components/badge/guidance
+
+- text: Bars
+  key: bars
+  items:
+    - text: Overview
+      base: /.
+    - text: Omnibar
+      base: /core-components/omnibar
+      value: /core-components/omnibar/guidance
+    - text: Omnibar
+      base: /components/omnibar/
+      value: /components/omnibar/guidance
+    - text: 'Omnibar: app launcher'
+      base: /components/omnibar-app-launcher/
+      value: /components/omnibar-app-launcher/guidance
+    - text: 'Omnibar: help button'
+      base: /components/omnibar-help-button/
+      value: /components/omnibar-help-button/guidance
+    - text: 'Omnibar: menu button'
+      base: /components/omnibar-menu-button/
+      value: /components/omnibar-menu-button/guidance
+    - text: 'Omnibar: notifications'
+      base: /components/omnibar-notifications/
+      value: /components/omnibar-notifications/guidance
+    - text: 'Omnibar: profile'
+      base: /components/omnibar-profile/
+      value: /components/omnibar-profile/guidance
+    - text: 'Omnibar: search'
+      base: /components/omnibar-search/
+      value: /components/omnibar-search/guidance
+    - text: Toolbar
+      base: /components/toolbar/
+      value: /components/toolbar/guidance
+
+- text: Buttons
+  key: buttons
+  items:
+    - text: Overview
+      base: /.
+    - text: Button
+      base: /components/button/
+      value: /components/button/guidance
+    - text: Floating action button
+      base: /components/fab/
+      value: /components/fab/guidance
+    - text: Icon button
+      base: /components/icon-button/
+      value: /components/icon-button/guidance
+
+- text: Cards
+  key: core-patterns
+  items:
+      - text: Overview
+        base: /.
+      - text: Card
+        base: /components/card/
+        value: /components/card/guidance
+      - text: Count
+        base: /components/card/
+        value: /components/card/guidance
+      - text: Filter
+        base: /components/card/
+        value: /components/card/guidance
+      - text: Profile
+        base: /components/card/
+        value: /components/card/guidance
+      - text: Stepper
+        base: /components/card/
+        value: /components/card/guidance
+
+- text: Controls
+  key: controls
+  items:
+    - text: Overview
+      base: /.
+    - text: Button toggle
+      base: /components/button-toggle/
+      value: /components/button-toggle/guidance
+    - text: Chips
+      base: /components/chips/
+      value: /components/chips/guidance
+    - text: Checkbox
+      base: /components/checkbox/
+      value: /components/checkbox/guidance
+    - text: Radio button
+      base: /components/radio-button/
+      value: /components/radio-button/guidance
+    - text: Slider
+      base: /components/slider/
+      value: /components/slider/guidance
+    - text: Switch
+      base: /components/switch/
+      value: /components/switch/guidance
+    - text: Select
+      base: /components/select/
+      value: /components/select/guidance
+
+- text: Data
+  key: data
+  items:
+    - text: Table
+      base: /components/table/
+      value: /components/table/guidance
+
+- text: Dates and Times
+  key: dates-times
+  items:
+    - text: Overview
+      base: /.
+    - text: Calendar
+      base: /components/calendar/
+      value: /components/calendar/guidance
+    - text: Date picker
+      base: /components/datepicker/
+      value: /components/datepicker/guidance
+    - text: Date range picker
+      base: /components/date-range-picker/
+      value: /components/date-range-picker/guidance
+    - text: Time picker
+      base: /components/time-picker/
+      value: /components/time-picker/guidance
+
+- text: Layout
+  key: layouts
+  items:
+    - text: Overview
+      value: /.
+
+    - text: Divider
+      base: /components/divider/
+      value: /components/divider/guidance
+    - text: Drawer
+      base: /components/drawer/
+      value: /components/drawer/guidance
+    - text: Footer
+      base: /components/footer/
+      value: /components/footer/guidance
+    - text: Grid Scaffold
+      base: /components/scaffold/
+      value: /components/scaffold/guidance
+    - text: Paginator
+      base: /components/paginator/
+      value: /components/paginator/guidance
+
+- text: Lists
+  key: lists
+  items:
+    - text: Overview
+      value: /.
+    - text: Accordion
+      base: /components/accordion
+      value: /components/accordion/guidance
+    - text: Expansion panel
+      base: /components/expansion-panel/
+      value: /components/expansion-panel/guidance
+    - text: List
+      base: /components/list/
+      value: /components/list/guidance
+    - text: Open icon
+      base: /components/open-icon/
+      value: /components/open-icon/guidance
+
+- text: Navigation
+  key: navigation
+  items:
+    - text: Overview
+      value: /.
+    - text: App launcher
+      value: /core-components/app-launcher/guidance
+    - text: Menu
+      base: /components/menu/
+      value: /components/menu/guidance
+    - text: Navigation drawer
+      base: /components/navigation-drawer/
+      value: /components/navigation-drawer/guidance
+    - text: Navigation rail
+      base: /components/navigation-drawer/
+      value: /components/navigation-drawer/guidance
+    - text: Product icon
+      base: /components/product-icon/
+      value: /components/product-icon/guidance
+    - text: Tabs
+      base: /components/tabs/
+      value: /components/tabs/guidance
+
+- text: Progress & loading
+  key: progress-loading
+  items:
+    - text: Busy indicator
+      value: /components/busy-indicator/guidance
+    - text: Linear progress indicator
+      base: /components/linear-progress/
+      value: /components/linear-progress/guidance
+    - text: Progress spinner
+      base: /components/progress-spinner/
+      value: /components/progress-spinner/guidance
+    - text: Skeleton
+      value: /components/skeleton/guidance
+
+- text: Messages
+  key: messages
+  items:
+    - text: Overview
+      value: /.
+    - text: Banner
+      base: /components/banner/
+      value: /components/banner/guidance
+    - text: Bottom sheet
+      base: /components/bottom-sheet/
+      value: /components/bottom-sheet/guidance
+    - text: Dialog
+      base: /components/dialog/
+      value: /components/dialog/guidance
+    - text: Inline message
+      base: /components/inline-message/
+      value: /components/inline-message/guidance
+    - text: Popup
+      base: /components/popup/
+      value: /components/popup/guidance
+    - text: Toast
+      base: /components/toast/
+      value: /components/toast/guidance
+    - text: Tooltip
+      base: /components/tooltip/
+      value: /components/tooltip/guidance
+
+- text: Input fields
+  key: input-fields
+  items:
+    - text: Overview
+      value: /.
+    - text: Quantity field
+      base: /components/quantity-field/
+      value: /components/quantity-field/guidance
+    - text: Text field
+      base: /components/text-field/
+      value: /components/text-field/guidance
+    - text: Autocomplete
+      base: /components/autocomplete/
+      value: /components/autocomplete/guidance
+    - text: Label value
+      base: /components/label-value/
+      value: /components/label-value/guidance
+    - text: File picker
+      base: /components/file-picker/
+      value: /components/file-picker/guidance
+    - text: Filter sidesheet
+      base: /components/filter-sidesheet/
+      value: /components/filter-sidesheet/guidance
+
+- text: Steppers
+  base: /components/stepper/
+  value: /components/stepper/guidance
+  items:
+    - text: Steps
+    - text: Inputs

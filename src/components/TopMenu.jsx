@@ -4,10 +4,10 @@ function MenuItem(props){
 }
 
 function TopMenu(props){
-  const topMenu = ['Getting started', 'Components', 'Styles', 'Layouts', 'Patterns', 'Use cases']
+  const topMenu = () => props.menu;
   return (
     <div class="topmenu">
-      <For each={topMenu}>{(item) =>
+      <For each={topMenu()}>{(item) =>
         <MenuItem item={item}></MenuItem>
       }
         </For>
