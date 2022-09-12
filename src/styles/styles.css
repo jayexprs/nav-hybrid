@@ -78,6 +78,7 @@ button[id="search button"] {
 
 .left-nav {
   width: 275px;
+  height: 100%;
   color: black;
   background-color: #b1b1b1;
   padding: 16px;

@@ -1,5 +1,8 @@
 export const SITE = {
-  "getting started": [],
+  "getting started": {
+    "design resources": ["figma"],
+    "development resources": ["storybook"]
+  },
   styles: [],
   components: {
     utilities: ['avatar', 'backdrop'],
