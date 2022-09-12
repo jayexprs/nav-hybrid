@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar.astro';
 import SideNav from '../layouts/SideNav.astro';
 import TopMenu from '../components/TopMenu';
 import MainLayout from '../layouts/MainLayout.astro';
+import Content from '../layouts/Content.astro';
 import {SITE} from '../sitenav.js';
 
 ---
@@ -10,5 +11,16 @@ import {SITE} from '../sitenav.js';
     <NavBar>
         <TopMenu menu={Object.keys(SITE)} client:load></TopMenu>
     </NavBar>
+    <Content>
     <SideNav></SideNav>
+    <div>
+        <h1>{Astro.url}</h1>
+        <h2>Adios</h2>
+    </div>
+    </Content>
 </MainLayout>
+<script is:inline>
+	// Redirect your homepage to the first page of documentation.
+	// If you have a landing page, remove this script and add it here!
+	window.location.pathname = `/getting-started`;
+</script>

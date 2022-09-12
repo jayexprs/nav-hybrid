@@ -5,16 +5,16 @@ import TopMenu from '../components/TopMenu';
 import MainLayout from '../layouts/MainLayout.astro';
 import Content from '../layouts/Content.astro';
 import {SITE} from '../sitenav.js';
-
+const where = Astro.url.pathname.substring(1);
 ---
 <MainLayout>
     <NavBar>
-        <TopMenu menu={Object.keys(SITE)} client:load></TopMenu>
+        <TopMenu menu={Object.keys(SITE)} where={where.replace("-", " ")} client:load></TopMenu>
     </NavBar>
     <Content>
     <SideNav></SideNav>
     <div>
-        <h1>{Astro.url}</h1>
+        <h1>{Astro.url.pathname.substring(1)}</h1>
         <h2>Adios</h2>
     </div>
     </Content>
