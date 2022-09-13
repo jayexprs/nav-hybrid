@@ -1,15 +1,9 @@
-function MenuItem(props){
-  const item = () => props.item;
-  
-  return <a href={item().replace(" ", "-")}>{item()}</a>
-}
-
 function TopMenu(props){
-  const topMenu = () => props.menu;
+  const topItems = () => props.menu;
   const where = () => props.where;
   return (
     <div class="topmenu">
-      <For each={topMenu()}>{(item) =>
+      <For each={topItems()}>{(item) =>
          <a href={item.replace(" ", "-")} class={where() == item ? "top-where" : ""}>{item}</a>
       }
         </For>
