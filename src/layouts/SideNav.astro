@@ -3,4 +3,4 @@ import {SITE} from "../sitenav.js";
 import SideMenu from '../components/SideMenu';
 const {where} = Astro.props;
 ---
-<div class="left-nav"><h1>{where}</h1><SideMenu items={SITE[where]} where={where} client:load></SideMenu></div>
+<div class="left-nav"><h2>{where}</h2><SideMenu items={SITE[where]} where={where} client:load></SideMenu></div>

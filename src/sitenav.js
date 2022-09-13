@@ -3,7 +3,15 @@ export const SITE = {
     "design resources": ["figma"],
     "development resources": ["storybook"]
   },
-  styles: [],
+  styles: {
+    branding: [],
+    colors: [],
+    typography: [],
+    "layout & spacing": [],
+    "UX writing": [],
+    icons: [],
+    illustrations: [],
+  },
   components: {
     utilities: ['avatar', 'backdrop'],
     cards: ['card', 'count', 'profile', 'stepper'],
@@ -13,7 +21,7 @@ export const SITE = {
     "input fields": ['quantity field', 'text field', 'autocomplete', 'label value', 'file picker', 'filter sidesheet'],
     steppers: ['single-level stepper', 'multi-level stepper', 'step cards']
   },
-  layouts: [],
-  patterns: [],
-  resources: [],
+  layouts: {},
+  patterns: {},
+  resources: {},
 };
