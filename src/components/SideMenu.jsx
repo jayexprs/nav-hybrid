@@ -7,7 +7,7 @@ function ChildNav(props){
   )
 }
 
-function SideNav(props) {
+function SideMenu(props) {
   const navItems = () => Object.entries(props.items);
   return (
       <div>
@@ -17,4 +17,4 @@ function SideNav(props) {
       </div>
   )
 }
-export default SideNav
+export default SideMenu
