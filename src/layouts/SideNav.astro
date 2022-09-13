@@ -4,4 +4,4 @@ import SideMenu from '../components/SideMenu';
 const {where} = Astro.props;
 where.replace("/", "");
 ---
-<div class="left-nav"><h2>{where}</h2><SideMenu items={site[where]} where={where} client:load></SideMenu></div>
+<div class="left-nav"><h2>{where}</h2><!--SideMenu items={site[where]} where={where} client:load></SideMenu--></div>
