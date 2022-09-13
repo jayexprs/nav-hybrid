@@ -4,13 +4,13 @@ export const site = {
     "development resources": ["storybook"]
   },
   styles: {
-    branding: [],
-    colors: [],
-    typography: [],
-    "layout & spacing": [],
-    "UX writing": [],
-    icons: [],
-    illustrations: [],
+    branding: [1],
+    colors: [2],
+    typography: [3],
+    "layout & spacing": [4],
+    "UX writing": [5],
+    icons: [6],
+    illustrations: [7],
   },
   components: {
     utilities: ['avatar', 'backdrop'],
@@ -21,7 +21,13 @@ export const site = {
     "input fields": ['quantity field', 'text field', 'autocomplete', 'label value', 'file picker', 'filter sidesheet'],
     steppers: ['single-level stepper', 'multi-level stepper', 'step cards']
   },
-  layouts: {},
-  patterns: {},
-  resources: {},
+  layouts: {
+    test: [8]
+  },
+  patterns: {
+    test: [9]
+  },
+  resources: {
+    test: [10]
+  },
 };
