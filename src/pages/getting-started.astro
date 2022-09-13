@@ -4,13 +4,13 @@ import SideNav from '../layouts/SideNav.astro';
 import TopMenu from '../components/TopMenu';
 import MainLayout from '../layouts/MainLayout.astro';
 import Content from '../layouts/Content.astro';
-import {SITE} from '../sitenav.js';
+import {site} from '../sitenav.js';
 const where = Astro.url.pathname.substring(1).replace("-", " ");
 ---
 
 <MainLayout>
     <NavBar>
-        <TopMenu menu={Object.keys(SITE)} where={where} client:load></TopMenu>
+        <TopMenu menu={Object.keys(site)} where={where} client:load></TopMenu>
     </NavBar>
     <Content>
     <SideNav where={where} ></SideNav>

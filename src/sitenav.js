@@ -1,4 +1,4 @@
-export const SITE = {
+export const site = {
   "getting started": {
     "design resources": ["figma"],
     "development resources": ["storybook"]
