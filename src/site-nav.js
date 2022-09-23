@@ -1,7 +1,8 @@
 export const site = {
   "getting started": {
     "design resources": ["figma"],
-    "development resources": ["storybook"]
+    "development resources": ["storybook"],
+    "consulting services": ["request consulting through Jira"]
   },
   styles: {
     branding: [1],
@@ -17,17 +18,21 @@ export const site = {
     cards: ['card', 'count', 'profile', 'stepper'],
     lists: ['accordion', 'expansion panel', 'list', 'open icon'],
     navigation: ['app launcher', 'menu', 'nav drawer', 'nav rail', 'tabs', 'product icon'],
-    messages: ['banner', 'bottom sheet', 'toast', 'dialog', 'inline message', 'popup', 'toast', 'tooltip'],
+    "notifications & messages": ['banner', 'bottom sheet', 'toast', 'dialog', 'inline message', 'popup', 'toast', 'tooltip'],
     "input fields": ['quantity field', 'text field', 'autocomplete', 'label value', 'file picker', 'filter sidesheet'],
     steppers: ['single-level stepper', 'multi-level stepper', 'step cards']
   },
   layouts: {
-    test: [8]
+    "a layout": [8]
   },
   patterns: {
-    test: [9]
+    "navigation: cross-app": [9],
+    "navigation: in-app": [10],
+    "landing pages": [11],
+    dashboards: [12]
   },
   resources: {
-    test: [10]
+    "UX Plays": ["UX plays in Confluence"],
+    "Mesh and other presentations": [14]
   },
 };

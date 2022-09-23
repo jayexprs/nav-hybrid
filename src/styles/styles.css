@@ -16,6 +16,10 @@ h1 {
   margin-top: 6px;
 }
 
+h2 {
+  font-size: 1.4em;
+}
+
 .navbar {
   display: flex;
   align-items: center;
