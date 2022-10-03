@@ -1,0 +1,29 @@
+---
+import NavBar from '../../components/NavBar.astro';
+import SideNav from '../../layouts/SideNav.astro';
+import TopMenu from '../../components/TopMenu';
+import MainLayout from '../../layouts/MainLayout.astro';
+import Content from '../../layouts/Content.astro';
+import {site} from '../../site-nav.js';
+const where = Astro.url.pathname.split('/');
+---
+<MainLayout>
+  <NavBar>
+    <TopMenu menu={Object.keys(site)} where={where[where.length - 2]} client:load></TopMenu>
+  </NavBar>
+  
+  <Content>
+    <SideNav where={where[where.length - 2]}></SideNav>
+      <div class="prototype">
+        <div class="prototype-title">
+        <h1>{where[where.length - 1]}</h1>
+        <label for="cars">Choose a car:</label>
+          <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </select>
+        </div>
+        <img src="/modified.png"/>
+      </div>
+    </Content>
+</MainLayout>
