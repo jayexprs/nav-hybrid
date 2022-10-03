@@ -2,11 +2,15 @@
   --light-green: rgb(156, 255, 166);
   --mid-green: rgb(20, 103, 28);
   --dark-green: rgb(3, 29, 5);
+
+  --dark-grey: #212121;
+  --mid-grey: #2c2c2c;
+  --light-grey: #c5c5c5;
 }
 
 body {
-  background-color: rgb(39, 39, 39);
-  color: rgb(156, 255, 166);
+  background-color: var(--dark-grey);
+  color: white;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
   min-height: 100vh;
 }
@@ -26,7 +30,7 @@ h2 {
   gap: 16px;
   height: 50px;
   width: 100%;
-  background-color: black;
+  background-color: var(--dark-grey);
 }
 
 
@@ -39,6 +43,7 @@ h2 {
   background-color: rgb(39, 45, 45);
   border-radius: 4px;
   height: 30px;
+  border: 1px solid white;
 }
 
 .nav-search {
@@ -53,13 +58,15 @@ h2 {
 }
 
 button[id="search button"] {
-  border: 1px solid rgb(156, 255, 166);
-  border-radius: 6px;
+  border: 1px solid var(--light-grey);
+  border-radius: 4px;
+  color: var(--dark-grey);
   margin-left: 6px;
   width: 100px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--light-grey);
 }
 
 .nav-title {
@@ -91,8 +98,8 @@ button[id="search button"] {
 .left-nav {
   width: 275px;
   height: 100%;
-  color: black;
-  background-color: #b1b1b1;
+  color: white;
+  background-color: var(--mid-grey);
   padding: 10px 16px 10px 16px;
   font-size: 1.2em;
   overflow: auto;
@@ -101,12 +108,29 @@ button[id="search button"] {
 .left-nav h2 {
   font-size: 1.5em;
   margin-bottom: 20px;
-  color: var(--dark-green);
+  color: white;
 }
 
 .list-header {
   font-weight: bold;
   text-transform: capitalize;
+}
+
+.list-header::before {
+  content: "\203A";
+  display: inline-block;
+}
+
+.clicked-list-header::before {
+  content: "\203A";
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.list-items {
+  font-weight: normal;
+  padding-left: 10px;
+  margin: 2px 0px 10px 0px;
 }
 .nav-items {
   margin-bottom: 12px;
@@ -114,4 +138,7 @@ button[id="search button"] {
 
 .list-child {
   padding-left: 6px;
+}
+.none {
+  display: none;
 }

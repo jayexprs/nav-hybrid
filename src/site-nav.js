@@ -1,8 +1,14 @@
 export const site = {
-  "getting started": {
+  home: {
     "design resources": ["figma"],
     "development resources": ["storybook"],
     "consulting services": ["request consulting through Jira"]
+  },
+  
+  "getting started": {
+    components: ["cool components"],
+    patterns: ["plaid", "argyle"],
+    layouts: ["landing page", "some other layout"]
   },
   styles: {
     branding: [1],

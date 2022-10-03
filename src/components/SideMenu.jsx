@@ -1,3 +1,5 @@
+import {toggle, setToggle} from "./stores.jsx";
+
 function ChildNav(props){
   const childNav = () => props.items;
   return (
@@ -9,12 +11,27 @@ function ChildNav(props){
 
 function SideMenu(props) {
   const navItems = () => Object.entries(props.items);
+  
+  const clicker = (event) => {
+    setToggle(toggle() + 1);
+    let clicked = event.target;
+    clicked.classList.toggle("clicked-list-header");
+    let content = clicked.nextElementSibling;
+    content.classList.toggle("none");
+    console.log(toggle());
+  };
+  
   return (
-      <div>
+    
       <For each={navItems()}>
-        {(item) => <ul class="nav-items"><li class="list-header">{item[0]} <ChildNav items={item[1]}></ChildNav></li></ul>}
+        {(navItem) =>
+          <div>
+              <h3 class="list-header" onClick={clicker}> {navItem[0]}</h3>
+              <ul class="list-items none"><ChildNav items={navItem[1]}></ChildNav></ul>
+          </div>
+        }
       </For>
-      </div>
+      
   )
 }
 export default SideMenu
