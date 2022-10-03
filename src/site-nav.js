@@ -6,9 +6,9 @@ export const site = {
   },
   
   "getting started": {
-    components: ["cool components"],
-    patterns: ["plaid", "argyle"],
-    layouts: ["landing page", "some other layout"]
+    components: ["omnibar", "app launcher"],
+    styles: ["color", "typography", "icons", "illustrations"],
+    layouts: ["scaffold"]
   },
   styles: {
     branding: [1],
@@ -21,6 +21,8 @@ export const site = {
   },
   components: {
     utilities: ['avatar', 'backdrop'],
+    bars: ['omnnibar', 'another bar'],
+    buttons: ['button', 'FAB', 'flare'],
     cards: ['card', 'count', 'profile', 'stepper'],
     lists: ['accordion', 'expansion panel', 'list', 'open icon'],
     navigation: ['app launcher', 'menu', 'nav drawer', 'nav rail', 'tabs', 'product icon'],

@@ -13,11 +13,9 @@ const where = Astro.url.pathname.substring(1).replace("-", " ");
         <TopMenu menu={Object.keys(site)} where={where} client:load></TopMenu>
     </NavBar>
     <Content>
-    <SideNav where={where} ></SideNav>
-    <div>
-        <h1>Eric's Prototype</h1>
-        <h2>Has a Figma Link</h2>
         
-    </div>
+        <div class="prototype">
+          <img src="/exported-2.png"/>
+        </div>
     </Content>
 </MainLayout>
