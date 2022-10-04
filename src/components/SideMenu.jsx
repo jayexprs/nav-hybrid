@@ -4,7 +4,7 @@ function ChildNav(props){
   const childNav = () => props.items;
   return (
     <For each={childNav()}>
-      {(item) => <li class="list-child">{item}</li>}
+      {(item) => <li class="list-child"><a href={item == 'button' ? '/components/button' : ''}>{item}</a></li>}
     </For>
   )
 }

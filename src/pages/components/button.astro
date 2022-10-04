@@ -17,16 +17,29 @@ const where = Astro.url.pathname.split('/');
       <div class="prototype">
         <div class="proto-title">
         <h1>Button</h1>
-        <div class="drop-down">
-          <label for="cars" style="display: none;">Component API:</label>
+        <div class="custom-drop-down">
+          <div class="label" id="custom-button">Component API</div>
+          <div class="options none" id="options">
+            <div>Option 1</div>
+            <div>Option 2</div>
+          </div>
+
+          <!--label for="cars" style="display: none;">Component API:</label>
             <select name="cars" id="cars">
               <option disabled selected hidden>Component API</option>
               <option value="volvo">Forge 2.x [current]</option>
               <option value="saab">TCW 1.x [legacy]</option>
-            </select>
+            </select-->
         </div>
         </div>
         <img src="/modified.png"/>
       </div>
     </Content>
 </MainLayout>
+<script>
+  let myButton = document.getElementById("custom-button");
+  myButton.addEventListener("click", () => {
+    let options = document.getElementById("options");
+    options.classList.toggle("none");
+  });
+</script>
