@@ -15,13 +15,16 @@ const where = Astro.url.pathname.split('/');
   <Content>
     <SideNav where={"components"}></SideNav>
       <div class="prototype">
-        <div class="prototype-title">
-        <span class="proto-title">{where[where.length - 1]}</span>
-        <label for="cars">Choose a car:</label>
-          <select name="cars" id="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-          </select>
+        <div class="proto-title">
+        <h1>{where[where.length - 1]}</h1>
+        <div class="drop-down">
+          <label for="cars" style="display: none;">Component API:</label>
+            <select name="cars" id="cars">
+              <option disabled selected hidden>Component API</option>
+              <option value="volvo">Forge 2.x [current]</option>
+              <option value="saab">TCW 1.x [legacy]</option>
+            </select>
+        </div>
         </div>
         <img src="/modified.png"/>
       </div>

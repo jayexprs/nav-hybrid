@@ -13,9 +13,8 @@ const where = Astro.url.pathname.substring(1).replace("-", " ");
         <TopMenu menu={Object.keys(site)} where={where} client:load></TopMenu>
     </NavBar>
     <Content>
-        
-        <div class="prototype">
-          <img src="/exported-2.png"/>
-        </div>
+      <div style="background-color: #fff; width: 100%;">
+        <img id="home" src="/exported-2.png"/>
+      </div>
     </Content>
 </MainLayout>

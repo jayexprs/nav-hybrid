@@ -14,7 +14,7 @@ export const site = {
     branding: [1],
     colors: [2],
     typography: [3],
-    "layout & spacing": [4],
+    "alignment & spacing": [4],
     "UX writing": [5],
     icons: [6],
     illustrations: [7],
@@ -31,7 +31,9 @@ export const site = {
     steppers: ['single-level stepper', 'multi-level stepper', 'step cards']
   },
   layouts: {
-    "a layout": [8]
+    "navigation": [],
+    "landing page": [],
+    "search": []
   },
   patterns: {
     "navigation: cross-app": [9],
