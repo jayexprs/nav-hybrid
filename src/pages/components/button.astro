@@ -7,6 +7,7 @@ import Content from '../../layouts/Content.astro';
 import {site} from '../../site-nav.js';
 const where = Astro.url.pathname.split('/');
 ---
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <MainLayout>
   <NavBar>
     <TopMenu menu={Object.keys(site)} where={"components"} client:load></TopMenu>
@@ -20,19 +21,12 @@ const where = Astro.url.pathname.split('/');
         <div class="custom-drop-down">
           <div class="label" id="custom-button">Component API</div>
           <div class="options none" id="options">
-            <div>Option 1</div>
-            <div>Option 2</div>
+            <div>Forge 2.x<span class="material-symbols-outlined right">open_in_new</span></div>
+            <div>TCW 1.x<span class="material-symbols-outlined right">open_in_new</span></div>
           </div>
-
-          <!--label for="cars" style="display: none;">Component API:</label>
-            <select name="cars" id="cars">
-              <option disabled selected hidden>Component API</option>
-              <option value="volvo">Forge 2.x [current]</option>
-              <option value="saab">TCW 1.x [legacy]</option>
-            </select-->
         </div>
         </div>
-        <img src="/modified.png"/>
+        <img src="/button-page.png"/>
       </div>
     </Content>
 </MainLayout>

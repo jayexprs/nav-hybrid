@@ -9,6 +9,11 @@
       <label for="site-search"></label>
       <input type="search" id="site-search">
     </div>
-      <button id="search button">Search</button>
+      <button id="search button" type="submit">Search</button>
   </div>
 </div>
+<script>
+  let searchButton = document.getElementById("search button");
+  let searchNotice = "This is a prototype, and we don't have search implemented. But tell us what you expected."
+  searchButton.addEventListener("click", () => alert(searchNotice));
+</script>

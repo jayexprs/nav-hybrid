@@ -16,8 +16,8 @@ export const site = {
     typography: [3],
     "alignment & spacing": [4],
     "UX writing": [5],
-    icons: [6],
-    illustrations: [7],
+    icons: ["icons"],
+    illustrations: ["illustrations"],
   },
   components: {
     utilities: ['avatar', 'backdrop'],
