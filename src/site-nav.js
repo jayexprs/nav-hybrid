@@ -8,7 +8,9 @@ export const site = {
   "getting started": {
     components: ["omnibar", "app launcher"],
     styles: ["color", "typography", "icons", "illustrations"],
-    layouts: ["scaffold"]
+    layouts: ["scaffold"],
+    "UX Plays": ["UX plays in Confluence"],
+    "Mesh and other presentations": [14]
   },
   styles: {
     branding: [1],
@@ -16,6 +18,9 @@ export const site = {
     typography: [3],
     "alignment & spacing": [4],
     "UX writing": [5],
+    
+  },
+  resources: {
     icons: ["icons"],
     illustrations: ["illustrations"],
   },
@@ -40,9 +45,5 @@ export const site = {
     "navigation: in-app": [10],
     "landing pages": [11],
     dashboards: [12]
-  },
-  resources: {
-    "UX Plays": ["UX plays in Confluence"],
-    "Mesh and other presentations": [14]
-  },
+  }
 };
