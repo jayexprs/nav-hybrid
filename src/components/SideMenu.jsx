@@ -1,5 +1,3 @@
-import {toggle, setToggle} from "./stores.jsx";
-
 function ChildNav(props){
   const childNav = () => props.items;
   return (
@@ -9,29 +7,37 @@ function ChildNav(props){
   )
 }
 
-function SideMenu(props) {
-  const navItems = () => Object.entries(props.items);
-  
+function ExpandableItem(props) {
+  const group = () => props.group;
+  const elements = () => props.elements;
+
   const clicker = (event) => {
-    setToggle(toggle() + 1);
     let clicked = event.target;
     clicked.classList.toggle("clicked-list-header");
     let content = clicked.nextElementSibling;
     content.classList.toggle("none");
-    console.log(toggle());
   };
+
+  return (
+   
+    <div>
+        <h3 class="list-header" onClick={clicker}> {group()}</h3>
+        <ul class="list-items none"><ChildNav items={elements()}></ChildNav></ul>
+      </div>
+    
+  
+  )
+}
+
+function SideMenu(props) {
+  const navItems = () => Object.entries(props.items);
   
   return (
-    
       <For each={navItems()}>
-        {(navItem) =>
-          <div>
-              <h3 class="list-header" onClick={clicker}> {navItem[0]}</h3>
-              <ul class="list-items none"><ChildNav items={navItem[1]}></ChildNav></ul>
-          </div>
+        {(navItem) => 
+          navItem[1].length > 0 ? <ExpandableItem group={navItem[0]} elements={navItem[1]}></ExpandableItem> : <h3 class="side-item">{navItem[0]}</h3>
         }
       </For>
-      
   )
 }
 export default SideMenu

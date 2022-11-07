@@ -240,6 +240,17 @@ button[id="search button"] {
   text-transform: capitalize;
 }
 
+.side-item {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+.side-item::before {
+  content: "\2007";
+  display: inline-block;
+}
+
 .list-header::before {
   content: "\203A";
   display: inline-block;
