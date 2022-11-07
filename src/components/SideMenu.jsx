@@ -23,7 +23,7 @@ function ExpandableItem(props) {
     <div>
         <h3 class="list-header" onClick={clicker}> {group()}</h3>
         <ul class="list-items none"><ChildNav items={elements()}></ChildNav></ul>
-      </div>
+    </div>
     
   
   )

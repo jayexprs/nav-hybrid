@@ -238,12 +238,13 @@ button[id="search button"] {
 .list-header {
   font-weight: bold;
   text-transform: capitalize;
+  margin-bottom: 4px;
 }
 
 .side-item {
   font-weight: bold;
   text-transform: capitalize;
-  margin-bottom: 4px;
+  margin: 4px;
 }
 
 .side-item::before {
