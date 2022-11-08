@@ -1,8 +1,9 @@
 function ChildNav(props){
   const childNav = () => props.items;
+  const where = () => props.where;
   return (
     <For each={childNav()}>
-      {(item) => <li class="list-child"><a href={item == 'button' ? '/components/button' : ''}>{item}</a></li>}
+      {(item) => <li class="list-child"><a href={`${where()}/${item}`}>{item}</a></li>}
     </For>
   )
 }
@@ -10,6 +11,7 @@ function ChildNav(props){
 function ExpandableItem(props) {
   const group = () => props.group;
   const elements = () => props.elements;
+  const where = () => props.where;
 
   const clicker = (event) => {
     let clicked = event.target;
@@ -21,8 +23,8 @@ function ExpandableItem(props) {
   return (
    
     <div>
-        <h3 class="list-header" onClick={clicker}> {group()}</h3>
-        <ul class="list-items none"><ChildNav items={elements()}></ChildNav></ul>
+      <h3 class="list-header" onClick={clicker}> {group()}</h3>
+      <ul class="list-items none"><ChildNav where={where()} items={elements()}></ChildNav></ul>
     </div>
     
   
@@ -31,11 +33,12 @@ function ExpandableItem(props) {
 
 function SideMenu(props) {
   const navItems = () => Object.entries(props.items);
+  const where = () => props.where;
   
   return (
       <For each={navItems()}>
         {(navItem) => 
-          navItem[1].length > 0 ? <ExpandableItem group={navItem[0]} elements={navItem[1]}></ExpandableItem> : <h3 class="side-item">{navItem[0]}</h3>
+          navItem[1].length > 0 ? <ExpandableItem where={where()} group={navItem[0]} elements={navItem[1]}></ExpandableItem> : <h3 class="side-item">{navItem[0]}</h3>
         }
       </For>
   )

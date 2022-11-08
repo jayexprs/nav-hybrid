@@ -4,21 +4,30 @@ export const site = {
     "development resources": ["storybook"],
     "consulting services": ["request consulting through Jira"]
   },
-  
   "core": {
+    "support/request & support": [],
+    "contribute": [
+      "design",
+      "code",
+      "recipe"]
+    ,    
     components: ["omnibar", "app launcher"],
     styles: ["color", "typography", "icons", "illustrations"],
     layouts: ["scaffold"],
-    "UX Plays & Services": ["overview", "strategy", "context", "research", "design"],
-    "Presentations": ["Mesh", "eLearning"]
+    "UX Plays <future>": ["overview", "strategy", "context", "research", "design"],
+    "UX Plays <current>": ["overview", "interview", "site visit", "survey", "brain sketching",
+  "journey mapping", "competitor analysis", "episode model", "affinity mapping", "design studio",
+"heuristic evaluation", "usability test"],
+    "Presentations": ["Mesh", "eLearning"],
+    "Case studies": ["contribute", "Next Gen GL", 
+  "Employee Access Calendar", "TCP Manager Apps",
+"Resident Access", "Tyler Bus", "Asset Registry"]
   },
   styles: {
     branding: [1],
     colors: [2],
     typography: [3],
     "alignment & spacing": [4],
- 
-    
   },
   "content": {
     "language and style":["tone/intro"], 
@@ -29,7 +38,8 @@ export const site = {
   assets: {
     icons: ["icons"],
     illustrations: ["illustrations"],
-    "figma lib": []
+    CDN: ["resources/cdn"],
+    "Designer assets": ["getting started as a designer/figma", "getting started as a designer/framer"],
   },
   components: {
     utilities: ['avatar', 'backdrop'],
